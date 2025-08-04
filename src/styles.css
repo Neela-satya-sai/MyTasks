@@ -44,3 +44,57 @@
   background-color: rgb(85, 6, 111);
   transition: 0.7s all;
 }
+
+.todos{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.singleTodo{
+  display: flex;
+  padding: 12px 5px;
+  margin-top: 15px;
+  /* margin-bottom: 5px; */
+  border-radius: 6px;
+  font-size: 25px;
+  width: 29.3%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(201, 216, 35);
+  z-index: 1;
+}
+.icon{
+  margin-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.editor_input{
+  padding: 5px;
+  outline: none;
+  font-size: medium;
+  border-radius: 3px;
+}
+/* .editor_input:focus{
+
+} */
+
+@media (max-width: 1200px){
+  .singleTodo{
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  
+  .input{
+    width: 95%;
+  }
+  .todos{
+    width: 95%;
+
+  }
+  .singleTodo{
+    width: 100%;
+  }
+}

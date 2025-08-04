@@ -11,7 +11,7 @@ interface props {
 const InputField: React.FC<props> = ({ todo, setTodo, todos, handleAdd }) => {
 
   // const inputRef = useRef<HTMLInputElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ const InputField: React.FC<props> = ({ todo, setTodo, todos, handleAdd }) => {
       className="input"
       onSubmit={(e) => {
         handleSubmit(e);
-        inputRef.current?.blur();
+        // inputRef.current?.blur();
       }}
     >
       <input
@@ -36,7 +36,7 @@ const InputField: React.FC<props> = ({ todo, setTodo, todos, handleAdd }) => {
         className="input__box"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        ref={inputRef}
+        // ref={inputRef}
       ></input>
       <button type="submit" className="input__submit">
         go
